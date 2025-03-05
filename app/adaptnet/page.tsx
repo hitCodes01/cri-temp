@@ -6,7 +6,8 @@ import { Button } from "../components/ui/button";
 import { useAdaptnet } from "../../hooks/useAdaptnet";
 import "../styles/adaptnet.css";
 
-export const useResourceSection = () => {
+// Move the hook inside the component or remove the export
+const useResourceSection = () => {
   const [selectedResourceSection, setSelectedResourceSection] = useState("adaptationPlan");
   const [selectedEmergencyPlan, setSelectedEmergencyPlan] = useState<string | null>(null);
 
